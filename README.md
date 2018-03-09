@@ -1,3 +1,5 @@
 # school-portal
 
-A school portal application built using Spring Boot, Angular 5 and Box.
+A portal web application where students and teachers can colloborate on files using Box platform.
+ 
+Uses Spring Boot 2.0, Angular 5, Box API.

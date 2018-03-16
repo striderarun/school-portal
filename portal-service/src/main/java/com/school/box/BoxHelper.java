@@ -9,24 +9,13 @@ import com.box.sdk.IAccessTokenCache;
 import com.box.sdk.InMemoryLRUAccessTokenCache;
 import com.box.sdk.JWTEncryptionPreferences;
 import com.google.common.collect.Iterables;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.core.env.Environment;
 import org.springframework.stereotype.Component;
 
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpSession;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 
 @Component
 public final class BoxHelper {
-
-//    private static Environment environment;
-//
-//    @Autowired
-//    public void setEnvironment(Environment env){
-//        environment = env;
-//    }
 
     static final String ENTERPRISE_ID = ConfigHelper.properties().getProperty("boxEnterpriseId");
     static final String CLIENT_ID = ConfigHelper.properties().getProperty("boxClientId");
@@ -34,9 +23,6 @@ public final class BoxHelper {
     static final String PRIVATE_KEY_FILE = ConfigHelper.properties().getProperty("boxPrivateKeyFile");
     static final String PRIVATE_KEY_PASSWORD = ConfigHelper.properties().getProperty("boxPrivateKeyPassword");
     static final String PUBLIC_KEY_ID = ConfigHelper.properties().getProperty("boxPublicKeyId");
-
-    static final String BOX_USER_ID_KEY = "box_id";
-    static final String BOX_USER_NAME = "name";
 
     static final int MAX_CACHE_ENTRIES = 100;
 

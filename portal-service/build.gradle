@@ -18,7 +18,7 @@ apply plugin: 'io.spring.dependency-management'
 dependencies {
     compile("org.springframework.boot:spring-boot-starter-web")
     compile("org.springframework.boot:spring-boot-starter-data-jpa")
-    compile("com.box:box-java-sdk:2.1.0")
+    compile("com.box:box-java-sdk:2.15.0")
 
     compile("com.h2database:h2")
 

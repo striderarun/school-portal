@@ -1,0 +1,7 @@
+# Compiled class file
+build/
+.idea/
+.gradle/
+app/node_modules/
+target/
+.settings/
